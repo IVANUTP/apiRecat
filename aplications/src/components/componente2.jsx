@@ -1,6 +1,12 @@
-import React from 'react'
+import Reac  from 'react'
 
-function Componente2({valor,texto,color,icono}) {
+//https://api.waqi.info/feed/here/?token=d51b299b0084210135008590b76896307609544b
+
+
+
+function Componente2({valor,texto,color,icono,descripcion}) {
+
+
   return (
    <>
       <div className="row">
@@ -14,12 +20,9 @@ function Componente2({valor,texto,color,icono}) {
                     <div className="icon">
                     <i class={icono}></i>
                     </div>
-                    <a href="#" className="small-box-footer">More info <i className={icono}></i></a>
+                    <a href="#" className="small-box-footer">{descripcion}</a>
                 </div>
             </div>
-            
-
-           
 
         </div>
    </>
